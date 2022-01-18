@@ -1,0 +1,409 @@
+*, :after, :before, html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    text-rendering: optimizeLegibility;
+    zoom: 1;
+}
+
+:root {
+    --white: #FFF;
+    --darkblue: #0e141d;
+    --blue-logo: #136cfd;
+    --accent-logo: #eab206;
+    --orange: #fb802d;
+    --yellow: #f4ce1e;
+    --gray: #1e1e1e;
+}
+
+html, body {
+    height: 100%;
+    width:100%;
+}
+
+
+
+body {
+	font-family: "Open Sans", sans-serif !important;
+	background-color: var(--darkblue);
+	color: var(--white) !important;
+}
+
+.fill-section {
+	width:100%;
+    height:600px;
+}
+
+
+/* NAVIGATION */
+
+#main-navigation {
+	background: transparent !important;
+	
+	position: absolute;
+    background: transparent;
+    border: 0;
+    padding: 40px 0;
+    padding-top: 25px;
+    margin-bottom: 0;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#main-navigation ul li a {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--white);
+}
+
+#main-navigation .navbar-nav > li.divider {
+    width: 6px;
+    height: 6px;
+    background: var(--white);
+    border-radius: 50%;
+    margin-top: 2.6em;
+    margin-right: 0;
+    margin-left: 2em;
+}
+
+#main-navigation .navbar-nav > li > a {
+	padding: 1rem 1em;
+    margin: 1.5em 0em 1.5em 2em;
+
+}
+
+
+
+
+/* BANNER */
+
+.hero-banner {
+
+    background: 
+    -webkit-linear-gradient(rgba(14, 20, 29, 0.7), rgba(0, 0, 0, 0)),
+    url(../img/hero-banner.jpg);
+
+    background:  
+    -o-linear-gradient(rgba(14, 20, 29, 0.7), rgba(0, 0, 0, 0)),
+    url(../img/hero-banner.jpg);
+
+    background:     
+    linear-gradient(rgba(14, 20, 29, 0.7), rgba(0, 0, 0, 0)),
+    url(../img/hero-banner.jpg);
+    
+    background-repeat: no-repeat;
+    background-position:top center;   
+    background-size: cover; 
+}
+
+.center-block {
+	left: 0;
+	right: 0;
+	display: block;
+}
+
+.title-box {
+	display: block;
+	position: absolute;
+	top: 20%;
+	padding: 30px 15px;
+}
+
+.vertical-align-center {
+	margin:50% 0;
+}
+
+
+.action-link {
+	position: absolute;
+    z-index: 1000;
+}
+
+.cta{
+	display: flex;
+	padding: 10px 0;
+	float: right !important;
+}
+
+.cta-line {
+	top:30px  !important;
+	position: relative;
+	width: 60%  !important;
+	display: inline-block;
+	background-color: var(--accent-logo);
+	border-radius: 2.5px;
+	opacity: .5;
+	height: 2px;
+}
+
+
+/* TYPOGRAPHY */
+
+#main-navigation, h1 {
+	font-family: 'Ubuntu' !important;
+}
+
+h1.title {
+	font-weight: 700;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+.subhead { 
+	font-size: 20px;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+a.cta-link {
+	position: relative !important;
+	color: var(--white) !important;
+	padding: 1em 2em;
+	font-size: 1.75rem !important;
+	color: var(--accent-logo) !important;
+}
+
+/* FEATURED*/
+
+.featured {
+	width: 100%;
+	height: 100%;
+	background-color: var(--white) !important;
+	color: var(--gray);
+
+	padding: 3em 0;
+
+	background-image: url(../img/spark.png);
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.featured img {
+	max-width: 100%;
+}
+
+.card-container {
+	padding: 1em 0;
+	text-align: center;
+	display: block;
+}
+
+.card-wrap {
+	margin: 1.75em 0.5em;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 319px) {
+	.title-box {
+		padding: 50px 25px;
+		top: 25%;
+	}
+
+	.vertical-align-center {
+		margin:400px 0;
+	}
+
+	h1.title {
+		font-weight: 700;
+		font-size: 30px;
+	}
+
+	.subhead { 
+		font-size: 20px;
+	}
+
+	.cta-line {
+		display: none;
+	}
+	
+	a.cta-link {
+		font-size: 20px !important;
+	}
+
+
+	.fill-section {
+		overflow-y: hidden !important;
+	}
+
+
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	.title-box {
+		padding: 50px 25px;
+		top: 30%;
+	}
+
+	.vertical-align-center {
+		margin:400px 0;
+	}
+
+	h1.title {
+		font-weight: 700;
+		font-size: 30px;
+	}
+
+	.subhead { 
+		font-size: 18px;
+	}
+
+	.cta {
+		margin-top: 40px;
+	}
+	a.cta-link {
+		font-size: 1em;
+	}
+	.cta-line {
+		margin-left: 2em;
+		top: 20px;
+	}
+
+}
+
+
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 410px) {
+	h1.title {
+		font-weight: 700;
+		font-size: 38px;
+	}
+
+	.subhead { 
+		font-size: 23px;
+	}
+
+	.title-box {
+		top: 38%;
+	}
+
+	.vertical-align-center {
+		margin:400px 0;
+	}
+
+	.cta {
+		margin-top: 40px;
+	}
+	a.cta-link {
+		font-size: 1em;
+	}
+	.cta-line {
+		margin-left: 2em;
+		top: 20px;
+	}
+
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 700px) {
+	.title-box {
+		padding: 50px 25px;
+		top: 30%;
+	}
+	.cta-line {
+		margin-left: 2em;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	h1.title {
+		font-weight: 700;
+		font-size: 50px;
+	}
+
+	.subhead { 
+		font-size: 30px;
+	}
+
+	.vertical-align-center {
+		margin:500px 0;
+	}
+
+	.cta {
+		margin-top: 0px;
+	}
+	
+	.cta-line {
+		margin-left: 2em;
+		top: 20px;
+	}
+
+	.fill-section {
+		width:100%;
+	    height:800px;
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {	
+	.subhead { 
+	font-size: 30px;
+	}
+
+	.title-box {
+		top: 35%;
+	}
+
+}
+
+@media only screen and (min-width : 1400px) {	
+	h1.title {
+		font-weight: 700;
+		font-size: 50px;
+	}
+
+	.subhead { 
+		font-size: 30px;
+	}
+	
+	.title-box {
+		top: 38%;
+	}
+
+	.vertical-align-center {
+		margin:600px 0;
+	}
+
+	.fill-section {
+    	height:100vh;
+	}
+
+	.featured {
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Sati",
+  "name": "sati",
+  "version": "1.0.2",
+  "description": "Spark Apps Technologies",
+  "author": "Michelle Suniga",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "npm": "^6.1.0",
+    "popper.js": "^1.14.3",
+    "smooth-scroll": "^14.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.5",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-size": "^3.0.0",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

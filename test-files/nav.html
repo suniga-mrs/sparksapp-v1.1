@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>NAV Toggle</title>
+
+	<style type="text/css">
+		
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+
+		nav {
+			background-color: red;
+			width: 100%;
+		}
+
+		ul {
+			margin: 0 auto;
+			padding: 0;
+			width: 80%
+		}
+
+		ul li {
+			list-style: none;
+			display: inline-block;
+			padding: 20px;
+		}
+
+		ul li:hover {
+			background-color: blue;
+		}
+
+		ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.nav-toggle {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 5;
+			color: #FFF;
+			font-size: 25px;
+			padding: 15px 20px;
+			margin: 10px 15px 5px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<div class="nav-toggle">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="">Home</a></li>
+			<li><a href="">Products &amp; Services</a></li>
+			<li><a href="">About Us</a></li>
+			<li><a href="">Partners</a></li>
+			<li><a href="">Contact</a></li>
+			<li class="divider"></li>
+			<li class="social-icon">
+				<a href="https://www.facebook.com/sparkappstech/" target="_BLANK">
+					<img src="img/icons/facebook.svg" width="20px">
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui culpa facilis dolorum cum quis placeat recusandae voluptatum cumque quisquam quia quaerat sit vel harum aliquam unde tempore nam, ea!</p>
+	</section>
+	
+</body>
+</html>
