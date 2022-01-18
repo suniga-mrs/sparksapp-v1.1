@@ -280,6 +280,43 @@ body {
     top: 20px;
 }
 
+/* Banner SLidewho */
+
+#banner-slide {
+    background-color: var(--darkblue);
+}
+
+/* #banner-slide .splide__slide {
+    height: 260px;
+} */
+
+#banner-slide .splide__arrow svg {
+    fill: #f1e3c5;
+}
+
+.splide__slide img {
+    vertical-align: bottom;
+    width: 100%;
+}
+.splide__pagination__page.is-active {
+    background: var(--accent-logo);
+}
+
+#banner-slide .splide__arrow:hover svg {
+    fill: var(--accent-logo);
+}
+
+.my-slider-progress {
+    background: #fff;
+}
+
+.my-slider-progress-bar {
+    background: var(--accent-logo);
+    height: 5px;
+    transition: width 400ms ease;
+    width: 0;
+}
+
 /* ABOUT PAGE */
 
 .core-values {
@@ -788,10 +825,15 @@ button[type='submit']:hover {
 }
 
 .contact-form-success {
-    background: #1c61d1;
+    background: #2167d9;
+    font-weight: bold;
     color: #fff;
     padding: 1em;
     text-align: center;
+    border-radius: 1rem;
+    border: 2px solid var(--darkblue);
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .contact-info {
@@ -832,6 +874,10 @@ button[type='submit']:hover {
     display: none;
     color: #ff004f;
     font-style: italic;
+}
+
+#contact-form-box .form-group {
+    margin-bottom: 5px;
 }
 
 /*========== FOOTER ===============*/

@@ -1,7 +1,7 @@
 var splide = new Splide( '.splide',{
     autoplay    : true,
     rewind      : true,
-    pauseOnHover: true,
+    // pauseOnHover: true,
     pauseOnFocus: true,
     type     : 'loop',
     height   : '350px',
