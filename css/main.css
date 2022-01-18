@@ -286,6 +286,10 @@ body {
     background-color: var(--darkblue);
 }
 
+#banner-slide picture {
+    width: 100%;
+}
+
 /* #banner-slide .splide__slide {
     height: 260px;
 } */
