@@ -4,8 +4,13 @@ var splide = new Splide( '.splide',{
     // pauseOnHover: true,
     pauseOnFocus: true,
     type     : 'loop',
-    height   : '350px',
+    height   : '450px',
     focus    : 'center',
+    breakpoints: {
+    1370: {
+      height: '350px',
+    },
+  },
   });
 
 var bar    = splide.root.querySelector( '.my-slider-progress-bar' );
