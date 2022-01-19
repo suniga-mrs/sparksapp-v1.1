@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   $("#f1-trigger").click(function() {
     player.loadVideoById({
-      videoId: 'AZNMKjeHOPk',
+      videoId: '0GxKeAL4RnU',
     });
 
     $("#feature-vid").toggleClass("open-vid");
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   $("#f2-trigger").click(function() {
     player.loadVideoById({
-      videoId: 'AZNMKjeHOPk',
+      videoId: 'nozlcnBJ-e8',
     });
 
     $("#feature-vid").toggleClass("open-vid");
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   $("#f4-trigger").click(function() {
     player.loadVideoById({
-      videoId: 'iiU-VKeZ8DA',
+      videoId: '-Zt2yDVlB30',
     });
 
     $("#feature-vid").toggleClass("open-vid");
