@@ -7,9 +7,36 @@ var splide = new Splide( '.splide',{
     height   : '450px',
     focus    : 'center',
     breakpoints: {
-    1370: {
-      height: '350px',
-    },
+      360: {
+        height: '330px',
+      },
+      390: {
+        height: '360px',
+      },
+      420: {
+        height: '380px',
+      },
+      600: {
+        height: '350px',
+      },
+      820: {
+        height: '200px',
+      },
+      920: {
+        height: '240px',
+      },
+      1100: {
+        height: '280px',
+      },
+      1200: {
+        height: '320px',
+      },
+      1380: {
+        height: '350px',
+      },    
+      1440: {
+        height: '360px',
+      }
   },
   });
 
